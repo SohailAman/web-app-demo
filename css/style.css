@@ -127,6 +127,7 @@ button:focus {
     background: #FCFCFC;
     border: 1px solid rgba(170, 170, 170, 0.1);
     border-radius: 6px;
+    margin-bottom: 26px !important;
 }
 
 .mainContent .referal .linkRef p,
@@ -141,6 +142,11 @@ button:focus {
 
 .navTabs {
     background: rgba(212, 219, 226, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-top: .5rem;
+    display: none;
 }
 
 .navTabs .navbar-last .tabLink img {
@@ -185,6 +191,10 @@ button:focus {
     .mainContent .referal .linkRef button {
         line-height: normal !important;
         font-size: 14px !important;
+    }
+
+    .navTabs {
+        display: block !important;
     }
 
     .navTabs .navbar-last .tabLink img {
