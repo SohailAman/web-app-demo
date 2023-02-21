@@ -5,216 +5,395 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Balance</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="https://trustrade.site/assets/images/logoIcon/favicon.png" type="image/x-icon">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- fontawesome 5  -->
-    <link rel="stylesheet" href="https://trustrade.site/assets/templates/bit_gold//css/all.min.css">
-    <!-- line-awesome webfont -->
-    <link rel="stylesheet" href="./css/line-awesome-min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./css/all-min.css">
+    <title>bootstrap Full</title>
+    <link rel="stylesheet" href="./css/airlines.css">
+    <!-- Font Aweswome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
+    <section>
+        <header class="curve">
+            <div class="top">
+                <div class="para text-white">
+                    <h1>Search for Cheap Airline tickets</h1>
+                    <p>Makes it easier to experience the world.</p>
+                </div>
+            </div>
+        </header>
+    </section>
 
-    <header class="header">
-        <div class="header__bottom py-3">
-            <div class="container">
-                <nav class="navbar navbar-expand-xl p-0 align-items-center">
-                    <a class="site-logo site-title" href="https://trustrade.site"><img src="./assets/logo.png"
-                            alt="site-logo"></a>
-                    <ul class="account-menu responsive-account-menu ml-3">
-                        <li class="icon"><a href="https://trustrade.site/user/dashboard">
-                                <i class="far fa-user"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="menu-toggle"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav main-menu ms-auto">
-                            <li> <a href="https://trustrade.site">Home</a></li>
-                            <li><a href="https://trustrade.site/plan">Plan</a></li>
-                            <li><a href="https://trustrade.site/about">About</a></li>
-                            <li><a href="https://trustrade.site/blog">Blog</a></li>
-                            <li><a href="https://trustrade.site/contact">Contact</a></li>
-                        </ul>
-                        <div class="nav-right">
-                            <ul class="account-menu ms-3">
-                                <li class="icon"><a href="https://trustrade.site/user/dashboard">
-                                        <i class="far fa-user"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <select class="select d-inline-block w-auto ms-xl-3 langSel">
-                                <option value="en" selected="">English</option>
-                            </select>
+    <section class="flight-search  position-relative">
+        <div class="container-fluid bg-light p-5 my-auto">
+            <div class="row d-flex align-items-center justify-content-evenly">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <label for="text">From</label>
+                    <select class="form-select mt-2" aria-label="Default select example">
+                                    <option selected>Abu Dhabi, UAE</option>
+                                    <option value="1">Amsterdam, Nl</option>
+                                    <option value="2">Brussels, BE</option>
+                                    <option value="2">Buenos Aires, ARG</option>
+                                    <option value="2">Canberra, AU</option>
+                                    <option value="2">London, UK</option>
+                                    <option value="2">Madrid, SP</option>
+                                    <option value="2">Abu Dhabi, UAE</option>
+                                    <option value="2">Stockholm, SW</option>
+                                    <option value="2">Moscow, RU</option>
+                                    <option value="3">Stockholm, SW</option>
+                                </select>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <label for="text">To</label>
+                    <select class="form-select mt-2" aria-label="Default select example">
+                                  <option selected>To Where?</option>
+                                  <option value="1">Amsterdam, Nl</option>
+                                  <option value="2">Brussels, BE</option>
+                                  <option value="2">Buenos Aires, ARG</option>
+                                  <option value="2">Canberra, AU</option>
+                                  <option value="2">London, UK</option>
+                                  <option value="2">Madrid, SP</option>
+                                  <option value="2">Abu Dhabi, UAE</option>
+                                  <option value="2">Stockholm, SW</option>
+                                  <option value="2">Moscow, RU</option>
+                                  <option value="3">Stockholm, SW</option>
+                                </select>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <label for="text">Depart</label>
+                    <input type="date" placeholder="Choose Date" class="px-2 mt-2">
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <label for="text">Return</label>
+                    <input type="date" placeholder="Choose Date" class="px-2 mt-2">
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 pt-3">
+                    <button class="btn-primary text-white" type="submit"> Search Flight</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="part2 position-relative pt-5 pb-5 mb-5 mx-auto">
+            <div class="txt pb-3 text-center">
+                <h3>HOT OFFERS</h3>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active core" aria-current="true" aria-label="Slide 1">
+                            <span class="fa fa-arrow-left" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                    <button type="button" class="active core" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                            <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row m-0">
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card mx-auto border-0 position-relative">
+                                    <img src="./assects/images/01.jpg" alt="">
+                                    <span class="badge bg-success position-absolute d-flex align-items-center justify-content-center">From $8.99</span>
+                                    <div class="caption my-2">
+                                        <53>Sites</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card mx-auto border-0 position-relative">
+                                    <img src="./assects/images/02.jpg" alt="">
+                                    <span class="badge bg-primary position-absolute d-flex align-items-center justify-content-center">From $14.99</span>
+                                    <div class="caption my-2">
+                                        <h5> Accomodation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card mx-auto border-0 position-relative">
+                                    <img src="./assects/images/03.jpg" alt="">
+                                    <span class="badge bg-danger position-absolute d-flex align-items-center justify-content-center">From $6.99</span>
+                                    <div class="caption my-2">
+                                        <h5>Views</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div><!-- header__bottom end -->
-    </header>
-
-    <section class="mainContent container py-5">
-        <div class="topHead my-5 p-4 d-flex align-items-center justify-content-between">
-            <div class="titles">
-                <h3 class="note">My Balance</h3>
-                <h3 class="amount">$20.00</h3>
-            </div>
-            <div class="topIcon">
-                <img src="./assets/dollor.svg" alt="">
-            </div>
-        </div>
-
-        <button class="button-main mb-5 mt-3 py-3 border-0 w-100 d-flex align-items-center justify-content-center">
-            <img class="me-2 mb-2" src="./assets/tap-click-svgrepo-com 1.svg" alt="">
-            <h2 class="mb-0">START MAKING MONEY</h2>
-        </button>
-
-        <section class="tabsAll my-5 p-4 text-center">
-            <div class="row mx-0 justify-content-center align-items-center">
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <a href="#" class="innerImg">
-                        <img src="./assets/dollor-2.svg" alt="">
-                        <h3>Deposit</h3>
-                    </a>
-                </div>
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <a href="#" class="innerImg">
-                        <img src="./assets/card.svg" alt="">
-                        <h3>Withdraw</h3>
-                    </a>
-                </div>
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <a href="#" class="innerImg">
-                        <img src="./assets/share.svg" alt="">
-                        <h3>Invite</h3>
-                    </a>
-                </div>
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <a href="#" class="innerImg">
-                        <img src="./assets/hand.svg" alt="">
-                        <h3>My Profit</h3>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="earningsMain py-5">
-            <h2 class="head pb-3">EARNINGS</h2>
-            <div class="row mx-0 text-center">
-                <div class="col-6 px-0">
-                    <div class="earnCard ms-0">
-                        <h3 class="earn">$0</h3>
-                        <h3 class="total">Total Deposit</h3>
-                    </div>
-                </div>
-                <div class="col-6 px-0 d-flex justify-content-end">
-                    <div class="earnCard me-0 w-100">
-                        <h3 class="earn">$0</h3>
-                        <h3 class="total">Total Interest</h3>
-                    </div>
-                </div>
-                <div class="col-6 px-0">
-                    <div class="earnCard ms-0">
-                        <h3 class="earn">$0</h3>
-                        <h3 class="total">Total Earnings</h3>
-                    </div>
-                </div>
-                <div class="col-6 px-0 d-flex justify-content-end">
-                    <div class="earnCard me-0 w-100">
-                        <h3 class="earn">$0</h3>
-                        <h3 class="total">Total Invest</h3>
-                    </div>
-                </div>
-                <div class="col-6 px-0">
-                    <div class="earnCard ms-0">
-                        <h3 class="earn">$0</h3>
-                        <h3 class="total">Total Withdraw</h3>
-                    </div>
-                </div>
-                <div class="col-6 px-0 d-flex justify-content-end">
-                    <div class="earnCard me-0 w-100">
-                        <h3 class="earn">$0</h3>
-                        <h3 class="total">Deposite Balance</h3>
+                    <div class="carousel-item">
+                        <div class="row m-0">
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card mx-auto border-0 position-relative">
+                                    <img src="./assects/images/04.jpg" alt="">
+                                    <span class="badge bg-danger position-absolute d-flex align-items-center justify-content-center">From $9.99</span>
+                                    <div class="caption my-2">
+                                        <h5> Sites</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card mx-auto border-0 position-relative">
+                                    <img src="./assects/images/05.jpg" alt="">
+                                    <span class="badge bg-success position-absolute d-flex align-items-center justify-content-center">From $12.99</span>
+                                    <div class="caption my-2">
+                                        <h5> Accomodation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card mx-auto border-0 position-relative">
+                                    <img src="./assects/images/02.jpg" alt="">
+                                    <span class="badge bg-warning position-absolute d-flex align-items-center justify-content-center">From $15.99</span>
+                                    <div class="caption my-2">
+                                        <h3></h3> Views</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="referal text-center">
-            <h2 class="head py-3">My Referrals</h2>
-            <div class="inner">
-                <h2 class="pb-3 pt-2">Refer & Enjoy the Bonus</h2>
-                <p>
-                    You’’ll get commission againt your referral’s activities. <br>
-                    Level has been decided by the HYIPLab authority.
-                    <br> If you reach the level, you’ll get commission.
-                </p>
-
-                <div class="linkRef d-flex align-items-center justify-content-evenly my-4 p-3">
-                    <p class="m-0">https://trustrade.site/register/admin123</p>
-                    <button class="border-0 bg-transparent copyBtn d-flex align-items-center p-0 m-0">
-                        <img class="me-1" src="./assets/copy.svg" alt="">
-                        Copy
-                    </button>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="navTabs py-3">
-        <div class="navbar-last container d-flex align-items-center justify-content-between">
-            <a href="#" class="tabLink">
-                <img src="./assets/home.svg" alt="">
-            </a>
-            <a href="#" class="tabLink">
-                <img src="./assets/scndTab.svg" alt="">
-            </a>
-            <a href="#" class="tabLink">
-                <img src="./assets/tap.svg" alt="">
-            </a>
-            <a href="#" class="tabLink">
-                <img src="./assets/msg.svg" alt="">
-            </a>
-            <a href="#" class="tabLink">
-                <img src="./assets/person.svg" alt="">
-            </a>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <section class="around">
+        <div class="container-fluid p-0">
+            <div class="row m-0 d-flex align-items-center justify-content-evenly text-white mx-auto py-5" style="width: 95%;">
+                <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center text-center">
+                    <div class="row d-flex justify-content-center m-0">
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card border-0 d-flex justify-content-center align-items-center" style="width: 80%; background-color: transparent;">
+                                <img src="./assects/images/01.svg" class="bg-white rounded-circle" width=" 45% " alt=" ">
+                                <div class="caption ">
+                                    <p>Make it easier to experience the world</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center ">
+                            <div class="card border-0  d-flex justify-content-center align-items-center" style="width: 80%; background-color: transparent; ">
+                                <img src="./assects/images/02.svg " class="bg-white rounded-circle" width="45%" alt="">
+                                <div class="caption">
+                                    <p>Advansed searching with filter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div class="card border-0 d-flex justify-content-center align-items-center" style="width: 80%; background-color: transparent;">
+                                <img src="./assects/images/03.svg" class="bg-white rounded-circle" width=" 45% " alt=" ">
+                                <div class="caption ">
+                                    <p>Find the cheapest regular flights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-flex align-items-center justify-content-center ">
+                    <div class="txt ">
+                        <h3>What is Around?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="question mb-5 pb-5">
+        <div class="container-fluid mt-5">
+            <div class="heading text-center mt-5 pt-5">
+                <h1>Popular Questions</h1>
+            </div>
+            <div class="row m-0 d-flex justify-content-center mx-auto mt-5">
+                <div class=" col-lg-6 col-md-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed bg-white text-dark acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              How can I create a list of destinations?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed bg-white text-dark acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false " aria-controls="flush-collapseTwo">
+                                How can I create a list of destinations?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed bg-white text-dark acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                How can I create a list of destinations?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed bg-white text-dark acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                  How can I create a list of destinations?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                    <img src="./assects/images/illustration.svg" alt="" width="80%">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        let Nav = document.querySelector('.collapse');
-        let togglerNav = document.querySelector('#toggler');
+    <section class="trip mt-5 mb-5">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-lg-6 col-md-12 p-0 mx-auto">
+                    <img src="./assects/images/Around-Booking-Directory.png" width="90%" alt="">
+                </div>
+                <div class="col-lg-1 col-md-12"></div>
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center py-4 mx-auto">
+                    <div class="text">
+                        <h1>Make your trip more comfortable</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.
+                        </p>
+                        <div class="point d-flex align-items-center my-4">
+                            <img src="./assects/images/04.svg" class="me-4" alt="" width="10%">
+                            <div class="txt">
+                                <h6>Book hotel</h6>
+                                <p>
+                                    Save not only on airline tickets, but also on accommodation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="point d-flex align-items-center my-4">
+                            <img src="./assects/images/05.svg" class="me-4" alt="" width="10%">
+                            <div class="txt">
+                                <h6>Book hotel</h6>
+                                <p>
+                                    Booking a car rental with us is as simple as booking a flight.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="point d-flex align-items-center my-4">
+                            <img src="./assects/images/06.svg" class="me-4" alt="" width="10%">
+                            <div class="txt">
+                                <h6>Book hotel</h6>
+                                <p>
+                                    With every flight booking you can order a medical insurance. Insurance options include cover for medical expenses, personal accident expenses, baggage, and more.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="border-0 text-primary mx-5 my-3 bg-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        let toggle = true;
+    <section class="deals">
+        <div class="container-fluid" style="width: 95%;">
+            <div class="row m-0">
+                <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                    <div class="dets">
+                        <div class="para">
+                            <h1 class="text-dark">Access the best deals anywhere</h1>
+                            <p class="text-secondary">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                        </div>
+                        <div class="download mt-5">
+                            <div class="row m-0 pt-5 d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 col-sm-12">
+                                    <a href="#" role="button">
+                                        <img src="./assects/images/App_Store_Badge.png" width="65%" alt="" style="border-radius: 14px;">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <a href="#" role="button">
+                                        <img src="./assects/images/google play.png" width="65%" alt="" style="border-radius: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                    <img src="./assects/images/mobile.jpg" width="80% " alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        togglerNav.addEventListener('click', () => {
-            if (toggle == true) {
-                Nav.classList.add('show');
-                toggle = false;
-            } else {
-                Nav.classList.remove('show');
-                toggle = true;
-            }
-        })
+    <section class="newsletter py-3">
+        <div class="container-fluid p-5 text-center">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 my-auto">
+                    <div class="letter">
+                        <h2>Subscribe to our newsletter</h2>
+                        <p>Find unique flight and hotel rates.</p>
+                        <div class="input-group mx-auto d-flex justify-content-center">
+                            <input type="email" class="border-0" placeholder="Your Email">
+                            <button class="btn border-0" role="button">
+                                <i class="fa fa-send-o text-white"></i>
+                            </button>
+                        </div>
+                        <div class="social my-3">
+                            <p>We are social</p>
+                            <div class="icons d-flex align-items-center justify-content-center">
+                                <i class="fa fa-facebook d-flex align-items-center justify-content-center mx-1"></i>
+                                <i class="fa fa-instagram d-flex align-items-center justify-content-center mx-1"></i>
+                                <i class="fa fa-twitter d-flex align-items-center justify-content-center mx-1"></i>
+                                <i class="fa fa-google d-flex align-items-center justify-content-center mx-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </script>
+    <section class="footer bg-dark">
+        <div class="row m-0 p-5">
+            <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                <p class="text-secondary text-center"><i class="fa fa-copyright"></i> All rights reserved.Made by <a href="#" class="text-decoration-none text-light">Zumurs</a></p>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-end">
+                <a href="" class="text-decoration-none text-light me-5">Support</a>
+                <a href="" class="text-decoration-none text-light me-5">Contact</a>
+                <a href="" class="text-decoration-none text-light">Terms & Conditions</a>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://kit.fontawesome.com/ac5c58246a.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
 </body>
 
 </html>
